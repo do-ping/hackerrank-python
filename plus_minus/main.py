@@ -31,10 +31,9 @@ def plusMinus(arr):
     print("%.6f\n%.6f\n%.6f" % (positive / n, negative / n, zero / n))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))
 
     plusMinus(arr)
-

@@ -10,6 +10,7 @@
 #  2. INTEGER k
 #
 
+
 def caesarCipher(s, k):
     if k > 100 or k < 0 or k == 0:
         return s
@@ -29,17 +30,21 @@ def caesarCipher(s, k):
     return "".join(result)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # n = int(input().strip())
     # s = input()
     # k = int(input().strip())
 
     for values in [
-        ("There's-a-starman-waiting-in-the-sky", 3, "Wkhuh'v-d-vwdupdq-zdlwlqj-lq-wkh-vnb"),
+        (
+            "There's-a-starman-waiting-in-the-sky",
+            3,
+            "Wkhuh'v-d-vwdupdq-zdlwlqj-lq-wkh-vnb",
+        ),
         ("middle-Outz", 2, "okffng-Qwvb"),
         ("abc", 3, "def"),
-        ("ABC", 26, "ABC")
+        ("ABC", 26, "ABC"),
     ]:
         s = values[0]
         k = values[1]

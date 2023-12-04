@@ -8,6 +8,7 @@
 # The function accepts INTEGER_ARRAY a as parameter.
 #
 
+
 def lonelyinteger(a):
     if not a:
         return
@@ -37,7 +38,7 @@ def lonelyinteger(a):
     return unique
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # n = int(input().strip())
     # a = list(map(int, input().rstrip().split()))
@@ -45,7 +46,7 @@ if __name__ == '__main__':
     for a in [
         [1, 2, 3, 4, 3, 2, 1],  # 4
         [2, 2, 11, 11, 12, 13, 22, 13, 12, 22, 9],  # 9
-        [9, 8, 7, 7, 8, 9, 1]  # 1
+        [9, 8, 7, 7, 8, 9, 1],  # 1
     ]:
         result = lonelyinteger(a)
         print(a)

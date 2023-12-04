@@ -8,6 +8,7 @@
 # The function accepts 2D_INTEGER_ARRAY matrix as parameter.
 #
 
+
 def flippingMatrix(matrix):
     matrix_size = len(matrix)
     submatrix_size = matrix_size // 2 + matrix_size % 2
@@ -48,7 +49,7 @@ def flippingMatrix(matrix):
     return max_sum
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # q = int(input().strip())
 
@@ -61,15 +62,14 @@ if __name__ == '__main__':
     #         matrix.append(list(map(int, input().rstrip().split())))
 
     for matrix in [
-        [[1, 2],
-         [3, 4]],  # 4 - reverse row 1, reverse column 1
-        [[112, 42, 83, 119],
-         [56, 125, 56, 49],
-         [15, 78, 101, 43],
-         [62, 98, 114, 108]],  # 414
-        [[1, 2, 3],
-         [4, 5, 6],
-         [7, 8, 9]]  # 28
+        [[1, 2], [3, 4]],  # 4 - reverse row 1, reverse column 1
+        [
+            [112, 42, 83, 119],
+            [56, 125, 56, 49],
+            [15, 78, 101, 43],
+            [62, 98, 114, 108],
+        ],  # 414
+        [[1, 2, 3], [4, 5, 6], [7, 8, 9]],  # 28
     ]:
         result = flippingMatrix(matrix)
         for row in matrix:

@@ -8,6 +8,7 @@
 # The function accepts STRING s as parameter.
 #
 
+
 def palindromeIndex(s: str):
     start = -1
     end = len(s)
@@ -74,7 +75,7 @@ def palindromeIndex(s: str):
     return to_remove
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # q = int(input().strip())
     # for q_itr in range(q):
@@ -87,7 +88,7 @@ if __name__ == '__main__':
         ("abcdba", [2, 4]),
         ("abcdefghijklmnnopqrstuvwxyzzyxwvutsrqponmlkjihgfedcba", [14]),
         ("lfcwnnwcwfl", [8]),
-        ("lfwcwnnwcfl", [2])
+        ("lfwcwnnwcfl", [2]),
     ]:
         s = sr[0]
         expected = sr[1]

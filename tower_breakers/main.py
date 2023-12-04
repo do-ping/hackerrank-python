@@ -10,6 +10,7 @@
 #  2. INTEGER m
 #
 
+
 def towerBreakers(n, m):
     if n == 0 or m == 0:
         return 1
@@ -24,7 +25,7 @@ def towerBreakers(n, m):
     return 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # t = int(input().strip())
 

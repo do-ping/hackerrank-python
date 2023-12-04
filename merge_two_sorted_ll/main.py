@@ -36,6 +36,7 @@ def print_singly_linked_list(node, sep, fptr):
 
 # Complete the mergeLists function below.
 
+
 #
 # For your reference:
 #
@@ -97,7 +98,7 @@ def mergeLists(head1: SinglyLinkedListNode, head2: SinglyLinkedListNode):
     # return head1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     #
     # tests = int(input())
@@ -125,10 +126,7 @@ if __name__ == '__main__':
     #     fptr.write('\n')
     #
     # fptr.close()
-    for data in [
-        ([1, 2, 3], [3, 4]),
-        ([1, 5, 6], [3, 4])
-    ]:
+    for data in [([1, 2, 3], [3, 4]), ([1, 5, 6], [3, 4])]:
         data1 = data[0]
         l1 = SinglyLinkedList()
         for i in data1:

@@ -1,11 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
 #
 # Complete the 'timeConversion' function below.
 #
@@ -32,18 +26,12 @@ def timeConversion(s):
     return f"{hour:02d}:{minute}:{seconds}"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     # s = input()
 
-    for s in [
-        "12:01:00PM",
-        "12:01:00AM",
-        "07:05:45PM",
-        "08:10:11AM",
-        "11:11:11PM"
-    ]:
+    for s in ["12:01:00PM", "12:01:00AM", "07:05:45PM", "08:10:11AM", "11:11:11PM"]:
         result = timeConversion(s)
         print(s, " -> ", result)
 

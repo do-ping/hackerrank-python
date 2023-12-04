@@ -8,6 +8,7 @@
 # The function accepts 2D_INTEGER_ARRAY petrolpumps as parameter.
 #
 
+
 def truckTour(petrolpumps):
     start_pump_i = 0
     current_pump_i = 0
@@ -29,16 +30,14 @@ def truckTour(petrolpumps):
     return None
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # n = int(input().strip())
     # petrolpumps = []
     # for _ in range(n):
     #     petrolpumps.append(list(map(int, input().rstrip().split())))
 
-    for input_ in [
-        ([[1, 5], [10, 3], [3, 4]], 1)
-    ]:
+    for input_ in [([[1, 5], [10, 3], [3, 4]], 1)]:
         petrolpumps = input_[0]
         expected = input_[1]
         result = truckTour(petrolpumps)

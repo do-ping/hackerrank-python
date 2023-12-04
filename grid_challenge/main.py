@@ -8,6 +8,7 @@
 # The function accepts STRING_ARRAY grid as parameter.
 #
 
+
 def gridChallenge(grid):
     if not grid:
         return "NO"
@@ -28,7 +29,7 @@ def gridChallenge(grid):
     return "YES"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
     # t = int(input().strip())
     # for t_itr in range(t):
@@ -40,7 +41,7 @@ if __name__ == '__main__':
     for grid_ in [
         (["abc", "ade", "efg"], "YES"),
         (["ebacd", "fghij", "olmkn", "trpqs", "xywuv"], "YES"),
-        (["abcdef", "aacdef", "bczxb"], "NO")
+        (["abcdef", "aacdef", "bczxb"], "NO"),
     ]:
         grid = grid_[0]
         expected = grid_[1]
